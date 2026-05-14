@@ -1,29 +1,12 @@
-#name: e2e-tests
-#on: [push]
-#jobs:
-#  cypress-run:
-#    runs-on: macos-latest
-#    strategy:
-#      fail-fast: false
-#      matrix:
-#        containers: [1,2,3]
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v6
-#      - name: Cypress run
-#        uses: cypress-io/github-action@v7
-#        with:
-#          start: npm start
-#          record: true
-#          parallel: true
-#        env:
-#          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-
-name: e2e-tests // ľubovoľný názov
+name: e2e-tests
 on: [push]
 jobs:
   cypress-run:
     runs-on: macos-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        containers: [1,2,3]
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -31,3 +14,23 @@ jobs:
         uses: cypress-io/github-action@v7
         with:
           start: npm start
+          record: true
+          parallel: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+
+
+## Version without Cypress Cloud.
+
+#name: e2e-tests # ľubovoľný názov
+#on: [push]
+#jobs:
+#  cypress-run:
+#    runs-on: macos-latest
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v6
+#      - name: Cypress run
+#        uses: cypress-io/github-action@v7
+#        with:
+#          start: npm start
