@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 // import { resetDb } from './cypress/tasks/resetDb'
 
 module.exports = defineConfig({
-  projectId: 'nvrnry',
+  projectId: 'nw3enx',
   viewportHeight: 550,
   viewportWidth: 660,
   // video: true, // Video will be made in headless tests only.
