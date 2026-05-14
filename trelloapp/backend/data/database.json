@@ -1,0 +1,21 @@
+{
+  "boards": [
+    {
+      "name": "board",
+      "user": 0,
+      "starred": false,
+      "created": "2026-05-14",
+      "id": 1
+    }
+  ],
+  "cards": [],
+  "lists": [
+    {
+      "name": "renamed list",
+      "boardId": 1,
+      "created": "2026-05-14",
+      "id": 1
+    }
+  ],
+  "users": []
+}

@@ -1,0 +1,1 @@
+Tento repoziár obsahuje PHPStorm verziu testov ku Skillmea kurzu "Automatizácia v Cypress".
