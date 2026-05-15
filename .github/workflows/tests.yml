@@ -14,12 +14,12 @@ jobs:
         uses: cypress-io/github-action@v7
         with:
           start: npm start
-          #browser: chrome
+          browser: chrome
           record: true
           parallel: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          #CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }} # Recommended
+          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }} # Recommended
 
 
 ## Version without Cypress Cloud.
