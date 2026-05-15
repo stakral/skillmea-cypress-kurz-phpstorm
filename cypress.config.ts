@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const { defineConfig } = require("cypress");
 // import { resetDb } from './cypress/tasks/resetDb'
 
@@ -29,6 +30,7 @@ module.exports = defineConfig({
 
     allowCypressEnv: false,
 
+    /* Test environment variables */
     // env: {
     //   requestMode: true
     // }
